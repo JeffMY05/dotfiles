@@ -69,21 +69,21 @@ call vundle#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 "               Cursed Navigation
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-noremap ; i
-noremap l l
-noremap i k
-noremap k j
-noremap j h
-set mouse=a
-
-"use ctrl+direction for words
-noremap <C-l> w
-noremap <C-j> B
-noremap ' o
-noremap o <C-d>
-noremap u <C-u>
-noremap <C-u> u
-imap <C-u> <C-w>
+"noremap ; i
+"noremap l l
+"noremap i k
+"noremap k j
+"noremap j h
+"set mouse=a
+"
+""use ctrl+direction for words
+"noremap <C-l> w
+"noremap <C-j> B
+"noremap ' o
+"noremap o <C-d>
+"noremap u <C-u>
+"noremap <C-u> u
+"imap <C-u> <C-w>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""" Tabs: like chrome/sublime:"""""""""""""""
