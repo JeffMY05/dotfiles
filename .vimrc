@@ -177,6 +177,7 @@ set completeopt-=preview
 
 """"""""""""""Floating Terminal""""""""""""""""
 noremap <leader>t :FloatermToggle<CR>
+noremap <leader>T :FloatermNew<CR>
 """""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""LaTeX setup""""""""""""""""""""
@@ -213,6 +214,8 @@ source ~/.vimextras/typos.vim
 
 """""""""""ETC"""""""""""""""""""""""""""""
 let g:ranger_map_keys = 0
+noremap <leader>f :Ranger<CR>
+noremap <leader>F :RangerNewTab<CR>
 let g:livepreview_previewer = 'zathura'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
