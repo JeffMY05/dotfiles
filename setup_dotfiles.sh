@@ -14,7 +14,7 @@ echo -e "\n--> Moving all exiting dotfiles to *.old"
 mv ~/.zshrc ~/.zshrc.old > /dev/null
 mv ~/.vimrc ~/.vimrc.old > /dev/null
 mv ~/.vimextras ~/.vimextras.old > /dev/null
-mv ~/.tmux.conf ~/.tmux.conf.old > /dev/null
+#mv ~/.tmux.conf ~/.tmux.conf.old > /dev/null
 mv ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.old > /dev/null
 mv ~/.config/zathura/zathurarc ~/.config/zathura/zathurarc.old > /dev/null
 
@@ -23,7 +23,7 @@ echo -e "\n--> Linking dotfiles to repository "
 ln -s $dir/.zshrc ~/.zshrc 
 ln -s $dir/.vimrc ~/.vimrc 
 ln -s $dir/.vimextras ~/.vimextras 
-ln -s $dir/.tmux.conf ~/.tmux.conf 
+#ln -s $dir/.tmux.conf ~/.tmux.conf 
 ln -s $dir/rc.conf ~/.config/ranger/rc.conf
 ln -s $dir/zathurarc ~/.config/zathura/zathurarc
 
@@ -40,21 +40,21 @@ mkdir -p ~/.vim/UltiSnips
 ln -s $dir/snippets/* ~/.vim/UltiSnips/ 
 
 # Installing TPM (TMUX plugin manager)
-TPM=~/.tmux/plugins/tpm
-if [ -d "$TPM" ]; then
-    echo -e "\n--> TPM already installed. Skiping..."
-else 
-    echo -e "\n--> Installing TPM (TMUX plugin manager)\n"
-    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm | sed "s/^/  /g"
-fi
-echo -e "\n--> Reloading Tmux"
-tmux source ~/.tmux.conf
+#TPM=~/.tmux/plugins/tpm
+#if [ -d "$TPM" ]; then
+#    echo -e "\n--> TPM already installed. Skiping..."
+#else 
+#    echo -e "\n--> Installing TPM (TMUX plugin manager)\n"
+#    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm | sed "s/^/  /g"
+#fi
+#echo -e "\n--> Reloading Tmux"
+#tmux source ~/.tmux.conf
 
 echo -e "\n--> Installing Plugins\n"
 source $dir/update.sh
-
-if [ "$1" == "-d" ] 
-then
-    echo -e "\n--> Deleting old dotfiles"
-    rm ~/.bashrc.old ~/.zshrc.old ~/.vimrc.old ~/.vimextras.old ~/.tmux.conf.old  ~/.config/ranger/rc.conf.old ~/.config/termite/config.old -rf
-fi
+#
+#if [ "$1" == "-d" ] 
+#then
+#    echo -e "\n--> Deleting old dotfiles"
+#    rm ~/.bashrc.old ~/.zshrc.old ~/.vimrc.old ~/.vimextras.old ~/.tmux.conf.old  ~/.config/ranger/rc.conf.old ~/.config/termite/config.old -rf
+#fi

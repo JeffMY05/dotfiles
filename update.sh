@@ -10,5 +10,5 @@ vim +PluginInstall! +qall
 
 
 #Tmux install and update plugins
-echo -e "\n--> Installing and updating tmux plugins\n"
-~/.tmux/plugins/tpm/scripts/install_plugins.sh
+#echo -e "\n--> Installing and updating tmux plugins\n"
+#~/.tmux/plugins/tpm/scripts/install_plugins.sh

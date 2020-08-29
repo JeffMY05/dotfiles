@@ -37,8 +37,8 @@
 "           instead of vim yank
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" change leader to ","
-let mapleader = ","
+" change leader to "n"
+let mapleader = "n"
 
 """"""""""""""""VUNDLE"""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
@@ -61,29 +61,10 @@ Plugin 'lervag/vimtex'
 Plugin 'honza/vim-snippets'
 " Plugin 'SirVer/ultisnips'
 Plugin 'KeitaNakamura/tex-conceal.vim'
-Plugin 'voldikss/vim-floaterm'
+" Plugin 'voldikss/vim-floaterm'
 
 call vundle#end()
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"               Cursed Navigation
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"noremap ; i
-"noremap l l
-"noremap i k
-"noremap k j
-"noremap j h
-"set mouse=a
-"
-""use ctrl+direction for words
-"noremap <C-l> w
-"noremap <C-j> B
-"noremap ' o
-"noremap o <C-d>
-"noremap u <C-u>
-"noremap <C-u> u
-"imap <C-u> <C-w>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """"""""""""" Tabs: like chrome/sublime:"""""""""""""""
@@ -216,7 +197,7 @@ source ~/.vimextras/typos.vim
 let g:ranger_map_keys = 0
 noremap <leader>f :Ranger<CR>
 noremap <leader>F :RangerNewTab<CR>
-let g:livepreview_previewer = 'zathura'
+"let g:livepreview_previewer = 'zathura'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
