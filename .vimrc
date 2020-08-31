@@ -37,8 +37,8 @@
 "           instead of vim yank
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" change leader to "n"
-let mapleader = "n"
+" change leader to ","
+let mapleader = ","
 
 """"""""""""""""VUNDLE"""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
