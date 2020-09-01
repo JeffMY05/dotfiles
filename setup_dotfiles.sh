@@ -18,6 +18,9 @@ mv ~/.vimrc ~/.vimrc.old > /dev/null
 #mv ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.old > /dev/null
 #mv ~/.config/zathura/zathurarc ~/.config/zathura/zathurarc.old > /dev/null
 
+# history search short-cut
+echo $'\"\\e[A\": history-search-backward\n\"\\e[B\": history-search-forward' > ~/.inputrc
+
 echo -e "\n--> Linking dotfiles to repository "
 #ln -s $dir/.bashrc ~/.bashrc 
 ln -s $dir/.zshrc ~/.zshrc 
