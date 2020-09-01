@@ -11,12 +11,12 @@ cd -
 
 echo -e "\n--> Moving all exiting dotfiles to *.old"
 #mv ~/.bashrc ~/.bashrc.old > /dev/null
-mv ~/.zshrc ~/.zshrc.old > /dev/null
+#mv ~/.zshrc ~/.zshrc.old > /dev/null
 mv ~/.vimrc ~/.vimrc.old > /dev/null
-mv ~/.vimextras ~/.vimextras.old > /dev/null
+#mv ~/.vimextras ~/.vimextras.old > /dev/null
 #mv ~/.tmux.conf ~/.tmux.conf.old > /dev/null
-mv ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.old > /dev/null
-mv ~/.config/zathura/zathurarc ~/.config/zathura/zathurarc.old > /dev/null
+#mv ~/.config/ranger/rc.conf ~/.config/ranger/rc.conf.old > /dev/null
+#mv ~/.config/zathura/zathurarc ~/.config/zathura/zathurarc.old > /dev/null
 
 echo -e "\n--> Linking dotfiles to repository "
 #ln -s $dir/.bashrc ~/.bashrc 
