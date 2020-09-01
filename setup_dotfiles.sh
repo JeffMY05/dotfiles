@@ -23,12 +23,12 @@ echo $'\"\\e[A\": history-search-backward\n\"\\e[B\": history-search-forward' > 
 
 echo -e "\n--> Linking dotfiles to repository "
 #ln -s $dir/.bashrc ~/.bashrc 
-ln -s $dir/.zshrc ~/.zshrc 
+#ln -s $dir/.zshrc ~/.zshrc 
 ln -s $dir/.vimrc ~/.vimrc 
-ln -s $dir/.vimextras ~/.vimextras 
+#ln -s $dir/.vimextras ~/.vimextras 
 #ln -s $dir/.tmux.conf ~/.tmux.conf 
-ln -s $dir/rc.conf ~/.config/ranger/rc.conf
-ln -s $dir/zathurarc ~/.config/zathura/zathurarc
+#ln -s $dir/rc.conf ~/.config/ranger/rc.conf
+#ln -s $dir/zathurarc ~/.config/zathura/zathurarc
 
 # Installing Vundle (Vim plugin manager)
 VUNDLE=~/.vim/bundle/Vundle.vim
